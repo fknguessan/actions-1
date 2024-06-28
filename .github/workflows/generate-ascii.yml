@@ -11,7 +11,9 @@ jobs:
           uses: actions/checkout@v4
 
         - name: Execting Shell Script
-          run: ./ascii-script.sh 
+          run: |
+            chmod +x ascii-script.sh
+            ./ascii-script.sh
 
         # - name: List file
         #   run: |
