@@ -15,8 +15,11 @@ jobs:
 
         - name: Execting Shell Script
           run: |
-            chmod +x ascii-script.sh
-            ./ascii-script.sh
+            ls -la
+            dos2unix ascii-script.sh
+            cat ascii-script.sh
+            sudo chmod +x ascii-script.sh
+            sudo ./ascii-script.sh
 
         # - name: List file
         #   run: |
